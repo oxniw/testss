@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 #
 from pymongo.server_api import ServerApi
 #uri = os.getenv("URL")
-client = MongoClient("mongodb+srv://oo6139116:830S2fDSdoPPRVqT@cluster0.usbw7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", server_api=ServerApi('1'))
 db = client["myfirst"]
 usersdata = db["usersdatatest"]
 usersnameandpassword = db["usersnameandpasswordtest"]
