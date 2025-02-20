@@ -144,6 +144,13 @@ def leaderboard():
         d.sort(key=lambda x: x[1], reverse=True)
         d = [[rank + 1, name, score] for rank, (name, score) in enumerate(d)]
         return jsonify({"leader":d})
+@app.route("/")  # Root route
+def home():
+    return "Flask App is Running!", 200
+
+if __name__ == "__main__":
+    app.run()
+
 if __name__ == "__main__":
     #app.run(debug=True,port=8080,host='0.0.0.0')
     app.run(debug=True)
