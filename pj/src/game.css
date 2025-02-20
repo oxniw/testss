@@ -1,0 +1,62 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffe4e1; 
+}
+
+.card {
+    background-color: #ffdab9; 
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.word {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.definition {
+    background-color: #fafad2;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.timer,
+.score {
+    margin-top: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.correct-btn {
+    background-color: #98fb98; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrong-btn {
+    background-color: #ff6347;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
