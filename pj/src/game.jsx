@@ -35,7 +35,7 @@ const Game = () => {
   const location = useLocation();
   const [name,getname] = useState(location.state?.name || "Guest");
   const [userData,GetuserData] = useState(location.state?.userData || { sources: {}});
-  const ip1 = "http://192.168.1.2:8080/api/v4"
+  const ip1 = "https://testss-voa9.onrender.com/api/v4"
   useEffect(() => {
     if (timeLeft <= 0) {
       endGame();

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation,Link,useNavigate, data } from "react-router-dom";
 function leaderboard() {
-    const ip1 = "http://192.168.1.2:8080/api/v5"
+    const ip1 = "https://testss-voa9.onrender.com/api/v5"
     const [data,Getdata] = useState([]);
     useEffect(() => {
         const leader = async () => {

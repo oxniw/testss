@@ -2,14 +2,14 @@ from flask import Flask,jsonify,request
 from flask_cors import CORS
 from pymongo import MongoClient
 from dotenv import load_dotenv
-import os
-base_dir = os.getcwd()
-env = os.path.join(base_dir, 'backend','database', 'key.env')
-load_dotenv(env)
-
+#import os
+#base_dir = os.getcwd()
+#env = os.path.join(base_dir, 'backend','database', 'key.env')
+#load_dotenv(env)
+#
 from pymongo.server_api import ServerApi
-uri = os.getenv("URL")
-client = MongoClient(uri, server_api=ServerApi('1'))
+#uri = os.getenv("URL")
+client = MongoClient("mongodb+srv://oo6139116:830S2fDSdoPPRVqT@cluster0.usbw7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", server_api=ServerApi('1'))
 db = client["myfirst"]
 usersdata = db["usersdatatest"]
 usersnameandpassword = db["usersnameandpasswordtest"]

@@ -7,7 +7,7 @@ function login() {
     const [username,setusername] = useState("");
     const [password, setpassword] = useState("");
     const navigate = useNavigate();
-    const ip1 = "http://192.168.1.2:8080/api/v2"
+    const ip1 = "https://testss-voa9.onrender.com/api/v2"
     const handleSubmit = async (event) => {
         event.preventDefault();//////////////////////////////////////////////////////////////////////////
         const send =  await axios.post(ip1, {

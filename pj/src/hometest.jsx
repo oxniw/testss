@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation,Link,useNavigate } from "react-router-dom";
 import axios from "axios";
 function Home() {
-  const ip3 = "http://192.168.1.2:8080/api/v3"
+  const ip3 = "https://testss-voa9.onrender.com/api/v3"
   const location = useLocation();
   const [userData,GetuserData] = useState(location.state?.userData || { sources: {}});
   const [name,getname] = useState(location.state?.name || "Guest");
