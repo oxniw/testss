@@ -4,6 +4,7 @@ import Login from "./login";
 import Signin from "./signin";
 import Game from "./game";
 import Leaderboard from "./leaderboard";
+import First from "./first";
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/game" element={<Game />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/" element={<First />} />
       </Routes>
     </Router>
   );
