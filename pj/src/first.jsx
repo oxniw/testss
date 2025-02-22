@@ -3,12 +3,12 @@ import { useLocation,Link,useNavigate } from "react-router-dom";
 function first() {
     const navigate = useNavigate();
     const signin = () => {
-        navigate("/signin", { state: {name: name , userData:userData} });
+        navigate("/signin");
       }
       //ขอสวยๆ
   return (
     <div>
-      <button onClick={signin}></button>
+      <Link to="/signin">signin</Link>
     </div>
   )
 }
